@@ -379,7 +379,7 @@ fun GroupMemberInfoLayout(
           OpenChatButton(modifier = Modifier.fillMaxWidth(0.33f), onClick = { openDirectChat(contact.contactId) })
           AudioCallButton(modifier = Modifier.fillMaxWidth(0.5f), chat, contact, knownContactConnectionStats)
           VideoButton(modifier = Modifier.fillMaxWidth(1f), chat, contact, knownContactConnectionStats)
-        } else if (groupInfo.fullGroupPreferences.directMessages.on(groupInfo.membership)) {
+        } else if (true) {
           if (contactId != null) {
             OpenChatButton(modifier = Modifier.fillMaxWidth(0.33f), onClick = { openDirectChat(contactId) }) // legacy - only relevant for direct contacts created when joining group
           } else {
